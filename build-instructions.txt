@@ -1,0 +1,17 @@
+
+*** open terminal, navigate to folder
+
+cd [drag in folder]
+
+
+*** to install tailwind
+
+npm install -D tailwindcss
+
+
+*** to run the "watch" command
+
+npx tailwindcss -i ./src/style.css -o ./style.css --watch
+
+
+*** to upload the site, use Github app
