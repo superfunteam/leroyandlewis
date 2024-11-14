@@ -7,3 +7,11 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.section-title {
+    @apply text-4xl mb-0 pb-4 font-semibold mt-12 border-b-2 border-navy dark:border-cream
+}
+
+.subsection {
+    @apply font-semibold text-2xl pb-4 border-b border-navy dark:border-cream
+}
