@@ -15,3 +15,11 @@
 .subsection {
     @apply font-semibold text-2xl pb-4 border-b border-navy dark:border-cream
 }
+
+.callout {
+    @apply flex flex-col md:flex-row gap-0 overflow-hidden rounded-2xl bg-navy dark:bg-cream items-center md:items-start
+}
+
+.rules .content > * {
+    @apply mx-8
+}

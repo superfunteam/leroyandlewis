@@ -51,15 +51,15 @@
 
     </script>
 </head>
-<body class="bg-cream dark:bg-navy text-navy dark:text-cream min-h-screen p-8 md:pt-16 flex flex-col items-center gap-12 md:gap-32">
+<body class="bg-cream dark:bg-navy text-navy dark:text-white min-h-screen md:pt-16 flex flex-col items-center gap-12 md:gap-32">
 
     <img src="logo-light.svg" class="w-64 lg:w-80 dark:hidden" alt="LeRoy and Lewis Logo">
     <img src="logo-dark.svg" class="w-64 lg:w-80 hidden dark:inline-block" alt="LeRoy and Lewis Logo">
 
-    <div class="cards grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto w-full">
+    <div class="cards grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto w-full px-8">
         <a href="#video" class="card opacity-0 translate-y-4 transition-all duration-700 delay-200 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
             <span class="material-symbols-outlined text-6xl text-gold">animated_images</span>
-            <strong class="text-xl md:text-3xl leading-none text-center">Quickstart Video</strong>
+            <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Quickstart Video</strong>
         </a>
         <a href="#rules" class="card opacity-0 translate-y-4 transition-all duration-700 delay-300 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
             <span class="material-symbols-outlined text-6xl text-gold">menu_book</span>
@@ -67,16 +67,16 @@
         </a>
         <a href="#" class="card opacity-0 translate-y-4 transition-all duration-700 delay-[400ms] rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
             <span class="material-symbols-outlined text-6xl text-gold">local_mall</span>
-            <strong class="text-xl md:text-3xl leading-none text-center">Buy the Game</strong>
+            <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Buy the Game</strong>
         </a>
         <a href="https://open.spotify.com/playlist/6CsklDJHwEvuu8aYSFEEbs" class="card opacity-0 translate-y-4 transition-all duration-700 delay-500 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
             <span class="material-symbols-outlined text-6xl text-gold">volume_up</span>
-            <strong class="text-xl md:text-3xl leading-none text-center">Spotify Playlist</strong>
+            <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Spotify Playlist</strong>
         </a>
     </div>
 
 
-    <div id="video" class="rules max-w-7xl mx-auto w-full">
+    <div id="video" class="max-w-7xl mx-auto w-full px-8">
   
   <div class="aspect-video bg-gold grid items-center justify-center">
       <span class="material-symbols-outlined text-7xl">play_circle</span>
@@ -87,15 +87,15 @@
     <div id="rules" class="rules max-w-7xl mx-auto w-full">
 
 
-  
-  <h1 class="section-title">Complete Rules</h1>
 
 
 
 
   <div class="content flex flex-col gap-8 mb-24 text-xl font-regular">
 
-    <div class="mt-6 md:mt-0 md:grid grid-cols-2 mb-16">
+    <h1 class="section-title">Complete Rules</h1>
+
+    <div class="mt-0 md:grid grid-cols-2 mb-16">
       <a class="underline underline-offset-2 mb-2 block" href="#setup">Basic Game Setup</a>
       <a class="underline underline-offset-2 mb-2 block" href="#started">Getting Started</a>
       <a class="underline underline-offset-2 mb-2 block" href="#turn">Taking a Turn</a>
@@ -111,17 +111,17 @@
 
     <p class="">Like a lot of card games, players gather around a central draw pile and discard pile (called <strong>The Pantry</strong>). Something like this:</p>
 
-    <img class="md:rounded-2xl mb-8 max-w-full" src="instructions-table-layout.png" alt="">
+    <img class="md:rounded-2xl mb-8 max-w-full !mx-0 md:!mx-8" src="instructions-table-layout.png" alt="">
 
     <p>Each chef works to collect and complete <strong>Meal Cards</strong> to earn coins. You may play a Meal Card from your hand into the space in front of you, and immediately start assembling the required <strong>Dish Cards</strong> to complete the Meal.</p>
 
-    <div class="flex gap-0 overflow-hidden rounded-2xl bg-navy dark:bg-cream">
-        <div class="flex-none w-12 md:w-48 bg-[#D15A5B] pt-6 md:pt-0">
-            <img class="w-full max-w-full" src="callout-image-cowboy.svg" alt="">
+    <div class="callout">
+        <div class="flex flex justify-center w-full md:w-48 bg-[#D15A5B] pt-0">
+            <img class="w-36 md:w-full md:max-w-full" src="callout-image-cowboy.svg" alt="">
         </div>
         <div class="grow text-white dark:text-navy p-8 align-middle">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-2">Watch out!</h2>
-            <p>Other chefs are out to spoil you, and they can play <strong>Action cards</strong> onto any meal in progress.</p>
+            <h2 class="text-center md:text-left text-3xl md:text-4xl font-semibold mb-2">Watch out!</h2>
+            <p class="text-center md:text-left">Other chefs are out to spoil you, and they can play <strong>Action cards</strong> onto any meal in progress.</p>
         </div>
     </div>
 
@@ -129,22 +129,33 @@
 
     <p>Place the entire deck in the middle of the table (take out the rules cards first). After deciding who goes first (we like letting the youngest or the oldest go first), that chef starts the game.</p>
 
-    <div class="md:grid grid-cols-3 gap-4">
-      <div class="bg-gold dark:bg-black text-white rounded-2xl p-4 pt-16 mb-4">
-        <strong>Cook meals<br></strong>
+    <div class="flex flex-col md:flex-row gap-2">
+      <div class="grow">
+        <h3 class="text-3xl font-semibold">Make meals<br></h3>
         <span class="text-base leading-tight block mt-1">Match meal cards with Dish cards</span>
       </div>
-      <div class="bg-gold dark:bg-black text-white rounded-2xl p-4 pt-16 mb-4">
-        <strong>Spoil other chefs<br></strong>
+
+      <div>
+        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:hidden">arrow_downward</span>
+        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center sm:hidden">arrow_right_alt</span>
+      </div>
+
+      <div class="grow">
+        <h3 class="text-3xl font-semibold">Spoil others' meals<br></h3>
         <span class="text-base leading-tight block mt-1">Play action cards to get in the way</span>
       </div>
-      <div class="bg-gold dark:bg-black text-white rounded-2xl p-4 pt-16 mb-4">
-        <strong>Be the best<br></strong>
+
+      <div>
+        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center">arrow_downward</span>
+      </div>
+
+      <div class="mb-8 grow">
+        <h3 class="text-3xl font-semibold">Be the best!<br></h3>
         <span class="text-base leading-tight block mt-1">Cook your way to the most coins</span>
       </div>
     </div>
 
-    <p>The winner is the chef that can earn the most coin by the end of the game. See: <a href="#winning" class="underline underline-offset-2">Winning</a> for complete details.</p>
+    <p>The winner is the pitmaster that can earn the most coin by the end of the game. See: <a href="#winning" class="underline underline-offset-2">Winning</a> for complete details.</p>
 
     <h2 id="turn" class="section-title">Taking a Turn</h2>
 
@@ -160,13 +171,13 @@
 
     <p>At the start of your turn, draw up to 7 cards into your hand. If the pantry pile is available, you may also draw from that pile.</p>
 
-    <div class="flex gap-0 overflow-hidden rounded-2xl bg-navy dark:bg-cream">
-        <div class="md:flex flex-none w-12 md:w-48 bg-gold pt-6 md:pt-0">
-            <img class="w-full max-w-full" src="callout-image-starburst.svg" alt="">
+    <div class="callout">
+        <div class="flex flex justify-center w-full md:w-48 bg-gold pt-0">
+            <img class="w-36 md:w-full md:max-w-full" src="callout-image-starburst.svg" alt="">
         </div>
         <div class="grow text-white dark:text-navy p-8 align-middle">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-2">Be smart!</h2>
-            <p>Draw your cards from the draw pile or pantry pile one-at-a-time. You never know if you'll pull a card that will suddenly make a Dish in the pantry a must-have. Good chefs are versatile!</p>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-2 text-center md:text-left">Be smart!</h2>
+            <p class="text-center md:text-left">Draw your cards from the draw pile or pantry pile one-at-a-time. You never know if you'll pull a card that will suddenly make a Dish in the pantry a must-have. Good chefs are versatile!</p>
         </div>
     </div>
 
@@ -180,33 +191,32 @@
 
     <p>On the table, you may only be working on <strong>3 active Meals</strong> at one time. If you complete or drop a Meal, you may start on a new Meal in the empty slot.</p>
 
-    <p>Your goal as a chef is to <strong>complete Meals worth the most coin.</strong> See: <a href="#anatomy" class="underline underline-offset-2">The Anatomy of a Meal</a> for more information.</p>
+    <p>Your goal is to <strong>complete Meals worth the most coin.</strong> See: <a href="#anatomy" class="underline underline-offset-2">The Anatomy of a Meal</a> for more information.</p>
 
     <h3 class="subsection"><span class="opacity-60">Phase 3:</span> Recyle</h3>
 
-    <p>Place any unwanted cards back into the pantry, face-up, next to the draw pile. <strong>Any chef can draw from this pile, so stack carefully!</strong> The more cards you discard, the more cards you'll be able to draw at the start of your next turn.</p>
+    <p>Place any unwanted cards back into the pantry, face-up, next to the draw pile. <strong>Any player can draw from this pile, so stack carefully!</strong> The more cards you discard, the more cards you'll be able to draw at the start of your next turn.</p>
 
-    <p>When you're done with your turn, tell the next chef so they can start their turn.</p>
+    <p>When you're done with your turn, tell the next player so they can start their turn.</p>
 
     <h2 id="anatomy" class="section-title">Anatomy of a Meal</h2>
 
     <p>Let's take a look at a finished Meal card, complete with multiple <strong>action cards</strong>, good and bad, attached:</p>
 
-    <img class="rounded-2xl mb-8" src="instructions-dish-layout.png" alt="">
+    <img class="rounded-2xl mb-8 !mx-0 md:!mx-8" src="instructions-dish-layout.png" alt="">
 
     <p>Take note of a few things</p>
 
     <p>
       <ul class="list-disc pl-5">
-      <li class="pl-2 mb-2">Collect all three ingriedients, <strong>shrimp, rice, and greens</strong>, as listed at the bottom of the Meal card.</li>
-      <li class="pl-2 mb-2">Another chef played a -1 coin action card.</li>
-      <li class="pl-2 mb-2">You countered back and played a +1 coin action card!</li>
-      <li class="pl-2 mb-2">The final Meal is worth 3 coins.</li>
+      <li class="pl-2 mb-2">Collect all three dishes, <strong>Smoked Chicken, Bacon Rib, and Grain-bow Salad</strong>, as listed at the bottom of the Meal card.</li>
+      <li class="pl-2 mb-2">You, or another player, played two +1 coin action cards.</li>
+      <li class="pl-2 mb-2">The final Meal is worth 4 coins.</li>
     </ul></p>
 
     <p>Once a Meal is final, <strong>it is safe from future action cards.</strong> Gather the cards and turn the Meal sideways, to mark it <strong>complete.</strong></p>
 
-    <img class="rounded-2xl mb-8" src="instructions-completed-dish.png" alt="">
+    <img class="rounded-2xl mb-8 !mx-0 md:!mx-8" src="instructions-completed-dish.png" alt="">
 
     <h2 id="winning" class="section-title">Winning</h2>
 
@@ -214,13 +224,13 @@
 
     <p>Take note of any <strong>action cards</strong> that may add or subtract coins from your Meals.</p>
 
-    <div class="flex gap-0 overflow-hidden rounded-2xl bg-navy dark:bg-cream">
-        <div class="md:flex flex-none w-12 md:w-48 bg-gold pt-6 md:pt-0">
-            <img class="w-full max-w-full" src="callout-image-coin.svg" alt="">
+    <div class="callout">
+        <div class="flex flex justify-center w-full md:w-48 bg-gold pt-0">
+            <img class="w-36 md:w-full md:max-w-full" src="callout-image-coin.svg" alt="">
         </div>
         <div class="grow text-white dark:text-navy p-8 align-middle">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-2">Mogul Mode!</h2>
-            <p>Instead of playing to 3 Meals, this mode is a race to 10 coins, regardless of how many Meals it takes. Got what it takes to be the top earner?</p>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-2 text-center md:text-left">Mogul Mode!</h2>
+            <p class="text-center md:text-left">Instead of playing to 3 Meals, this mode is a race to 10 coins, regardless of how many Meals it takes. Got what it takes to be the top earner?</p>
         </div>
     </div>
 
