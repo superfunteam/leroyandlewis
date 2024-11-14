@@ -786,6 +786,14 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.\!mb-0 {
+  margin-bottom: 0px !important;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2948,6 +2956,14 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .md\:grid {
