@@ -17,7 +17,7 @@
 }
 
 .callout {
-    @apply flex flex-col md:flex-row gap-0 overflow-hidden rounded-2xl bg-navy dark:bg-cream items-center md:items-start
+    @apply flex flex-col md:flex-row gap-0 overflow-hidden rounded-2xl bg-navy dark:bg-cream items-center
 }
 
 .rules .content > * {
