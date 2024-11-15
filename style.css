@@ -941,6 +941,10 @@ video {
   max-width: 100%;
 }
 
+.flex-auto {
+  flex: 1 1 auto;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1953,6 +1957,11 @@ video {
   border-color: rgb(253 230 138 / var(--tw-border-opacity));
 }
 
+.border-navy {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 44 77 / var(--tw-border-opacity));
+}
+
 .bg-\[\#D15A5B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(209 90 91 / var(--tw-bg-opacity));
@@ -2067,6 +2076,10 @@ video {
   background-origin: content-box;
 }
 
+.stroke-1 {
+  stroke-width: 1;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -2130,6 +2143,18 @@ video {
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -2229,6 +2254,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -2876,6 +2905,11 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.dark\:border-cream:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(238 236 227 / var(--tw-border-opacity));
+}
+
 .dark\:bg-black:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -2951,8 +2985,22 @@ video {
     max-width: 100%;
   }
 
+  .md\:rotate-90 {
+    --tw-rotate: 90deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:-rotate-90 {
+    --tw-rotate: -90deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2969,6 +3017,10 @@ video {
 
   .md\:rounded-2xl {
     border-radius: 1rem;
+  }
+
+  .md\:border-r {
+    border-right-width: 1px;
   }
 
   .md\:pt-16 {

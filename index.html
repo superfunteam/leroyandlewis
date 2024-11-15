@@ -51,14 +51,14 @@
 
     </script>
 </head>
-<body class="bg-cream dark:bg-navy text-navy dark:text-white min-h-screen md:pt-16 flex flex-col items-center gap-12 md:gap-32">
+<body class="bg-cream dark:bg-navy text-navy dark:text-white min-h-screen pt-8 md:pt-16 flex flex-col items-center gap-12 md:gap-32">
 
     <img src="logo-light.svg" class="w-64 lg:w-80 dark:hidden" alt="LeRoy and Lewis Logo">
     <img src="logo-dark.svg" class="w-64 lg:w-80 hidden dark:inline-block" alt="LeRoy and Lewis Logo">
 
     <div class="cards grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto w-full px-8">
         <a href="#video" class="card opacity-0 translate-y-4 transition-all duration-700 delay-200 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
-            <span class="material-symbols-outlined text-6xl text-gold">animated_images</span>
+            <span class="material-symbols-outlined text-6xl text-gold font-medium">animated_images</span>
             <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Quickstart Video</strong>
         </a>
         <a href="#rules" class="card opacity-0 translate-y-4 transition-all duration-700 delay-300 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
@@ -127,25 +127,23 @@
 
     <h2 id="started" class="section-title">Getting Started</h2>
 
-    <div class="flex flex-col md:flex-row gap-2 border-b-2">
+    <div class="flex flex-col md:flex-row gap-2 border-b-2 border-navy dark:border-cream">
       <div class="grow">
         <h3 class="text-3xl font-semibold">Make meals<br></h3>
         <span class="text-base leading-tight block mt-1">Match meal cards with Dish cards</span>
       </div>
 
       <div>
-        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:hidden">arrow_downward</span>
-        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center max-sm:hidden md:mr-6 items-center">arrow_right_alt</span>
+        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:-rotate-90">arrow_downward</span>
       </div>
 
       <div class="grow">
         <h3 class="text-3xl font-semibold">Spoil others' meals<br></h3>
-        <span class="text-base leading-tight block mt-1">Play action cards to get in the way</span>
+        <span class="text-base leading-tight block mt-1">Play Action cards to get in the way</span>
       </div>
 
       <div>
-        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:hidden">arrow_downward</span>
-        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center max-sm:hidden md:mr-6 items-center">arrow_right_alt</span>
+        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:-rotate-90">arrow_downward</span>
       </div>
 
       <div class="mb-12 grow">
@@ -188,7 +186,7 @@
 
     <h3 class="subsection"><span class="opacity-60">Phase Two:</span> Play</h3>
 
-    <p>During your turn, you can play any number of cards. You can play <strong>Meal cards</strong> in the space in front of you, <strong>Dish cards</strong> under the Meal, and <strong>action cards</strong> to add coins to your own Meals or to sabotage the Meals of others.</p>
+    <p>During your turn, you can play any number of cards. You can play <strong>Meal cards</strong> in the space in front of you, <strong>Dish cards</strong> under the Meal, and <strong>Action cards</strong> to add coins to your own Meals or to sabotage the Meals of others.</p>
 
     <p>On the table, you may only be working on <strong>3 active Meals</strong> at one time. If you complete or drop a Meal, you may start on a new Meal in the empty slot.</p>
 
@@ -202,19 +200,20 @@
 
     <h2 id="anatomy" class="section-title">Anatomy of a Meal</h2>
 
-    <p>Let's take a look at a finished Meal card, complete with multiple <strong>action cards</strong>, good and bad, attached:</p>
+    <p>Let's take a look at a finished Meal card, complete with multiple <strong>Action cards</strong>, good and bad, attached:</p>
 
     <img class="md:rounded-2xl mb-0 md:mb-8 !mx-0 md:!mx-8" src="instructions-dish-layout.png" alt="">
 
-    <p>Take note of a few things</p>
+    <p><strong>Take note of a few things:</strong></p>
 
       <ul class="list-disc pl-5">
       <li class="pl-2 mb-2">Collect all three dishes, <strong>Smoked Chicken, Bacon Rib, and Grain-bow Salad</strong>, as listed at the bottom of the Meal card.</li>
-      <li class="pl-2 mb-2">You, or another player, played two +1 coin action cards.</li>
-      <li class="pl-2 mb-2">The final Meal is worth 4 coins.</li>
+      <li class="pl-2 mb-2">You, or a friendly player, played a <strong>+1 coin</strong> Action card.</li>
+      <li class="pl-2 mb-2">An opposing player played a <strong>-1 coin</strong> Action card.</li>
+      <li class="pl-2 mb-2">The final Meal is worth <strong>3 coins</strong>.</li>
     </ul>
 
-    <p>Once a Meal is final, <strong>it is safe from future action cards.</strong> Gather the cards and turn the Meal sideways, to mark it <strong>complete.</strong></p>
+    <p>Once a Meal is final, <strong>it is safe from future Action cards.</strong> Gather the cards and turn the Meal sideways, to mark it <strong>complete.</strong></p>
 
     <img class="md:rounded-2xl mb-0 md:mb-8 !mx-0 md:!mx-8" src="instructions-completed-dish.png" alt="">
 
@@ -222,7 +221,7 @@
 
     <p>The game is over when any player completes 3 Meals. <strong>The winner is the player that has earned the most coins on their completed Meals.</strong> Only Meals that are complete with all Dishes can be tallied.</p>
 
-    <p>Take note of any <strong>action cards</strong> that may add or subtract coins from your Meals.</p>
+    <p>Take note of any <strong>Action cards</strong> that may add or subtract coins from your Meals.</p>
 
     <div class="callout">
         <div class="flex flex justify-center w-full md:w-48 bg-gold pt-0">
@@ -238,64 +237,62 @@
 
     <p class="mb-8">Use <strong>Action Cards</strong> to turn up the heat! Target other players, give yourself more Coin, block to play defense. When an <strong>Action Card</strong> is played, discard it to the bottom of <strong>The Pantry</strong> card pile.</p>
 
-    <div class="md:grid-cols-2">
-            <div 01>
-                <div class="action-card flex gap-8 mb-8">
-                  <div class="w-1/4">
-                  <img src="089-action-cancel.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
-                  </div>
-                  <div class="w-3/4">
-                    Instantly play a <strong>Not So Fast</strong> card during anyone's turn to cancel the effect of any other Action Card. Stop another player from taking a coin from your Meal, or stop another player from dropping a Meal.
-                  </div>
-                </div>
-
-                <div class="action-card flex gap-8 mb-8">
-                  <div class="w-1/4">
-                  <img src="091-action-dropped-tray.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
-                  </div>
-                  <div class="w-3/4">
-                    Instantly play a <strong>Dropped Tray</strong> card during anyone's turn to remove any in-progress <strong>Meal</strong> from play. If a <strong>Meal</strong> is complete, it CANNOT be dropped. 
-                  </div>
-                </div>
-
-                <div class="action-card flex gap-8 mb-8">
-                  <div class="w-1/4">
-                  <img src="085-action-minus.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
-                  </div>
-                  <div class="w-3/4">
-                    Instantly play a <strong>Minus One Coin</strong> card during anyone's turn onto any <strong>Meal</strong> card. If a <strong>Meal</strong> is complete, it CANNOT be targeted by Action Cards. 
-                  </div>
-                </div>
-            </div>
-
-            <div 02>
-                <div class="action-card flex gap-8 mb-8">
-                  <div class="w-1/4">
-                  <img src="094-action-chef-peek.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
-                  </div>
-                  <div class="w-3/4">
-                    During your turn, play a <strong>Peek</strong> card to look through and take any cards in in the top five of either the <strong>Draw Pile</strong> or the <strong>Pantry</strong>.
-                  </div>
-                </div>
-
-                <div class="action-card flex gap-8 mb-8">
-                  <div class="w-1/4">
-                  <img src="082-action-plus.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
-                  </div>
-                  <div class="w-3/4">
-                    During your turn, play a <strong>+1 Coin</strong> card to add a coin to any active <strong>Meal</strong>. You can play a coin on your Meal or on a Meal from any other player.
-                  </div>
-                </div>
-
-                <div class="action-card flex gap-8 mb-8">
-                  <div class="w-1/4">
-                  <img src="096-action-grackle-dang.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
-                  </div>
-                  <div class="w-3/4">
-                    During your turn, play a <strong>Grackle</strong> card to steal a card, face down, from any other player. Discard the Grackle at the bottom of the <strong>Pantry</strong>.
-                  </div>
-            </div>
+    <div class="grid md:grid-cols-3 gap-8">
+            
+        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+          <div class="max-w-full">
+          <img src="089-action-cancel.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
+          </div>
+          <div class="flex-auto pt-8">
+            Instantly play a <strong>Not So Fast</strong> card during anyone's turn to cancel the effect of any other Action Card. Stop another player from taking a coin from your Meal, or stop another player from dropping a Meal.
+          </div>
         </div>
+
+        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+          <div class="max-w-full">
+          <img src="091-action-dropped-tray.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
+          </div>
+          <div class="flex-auto pt-8">
+            Instantly play the <strong>A dropped tray!</strong> card during anyone's turn to remove any in-progress <strong>Meal</strong> from play. If a <strong>Meal</strong> is complete, it CANNOT be dropped.
+          </div>
+        </div>
+
+        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+          <div class="max-w-full">
+          <img src="085-action-minus.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
+          </div>
+          <div class="flex-auto pt-8">
+            Instantly play a <strong>Minus One Coin</strong> card during anyone's turn onto any <strong>Meal</strong> card. If a <strong>Meal</strong> is complete, it CANNOT be targeted by Action Cards.
+          </div>
+        </div>
+
+        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+          <div class="max-w-full">
+          <img src="094-action-chef-peek.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
+          </div>
+          <div class="flex-auto pt-8">
+            During your turn, play a <strong>Peek</strong> card to look through and take any cards in in the top five of either the <strong>Draw Pile</strong> or the <strong>Pantry</strong>.
+          </div>
+        </div>
+
+        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+          <div class="max-w-full">
+          <img src="082-action-plus.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
+          </div>
+          <div class="flex-auto pt-8">
+            During your turn, play a <strong>+1 Coin</strong> card to add a coin to any active <strong>Meal</strong>. You can play a coin on your Meal or on a Meal from any other player.
+          </div>
+        </div>
+
+        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+          <div class="max-w-full">
+          <img src="096-action-grackle-dang.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
+          </div>
+          <div class="flex-auto pt-8">
+            During your turn, play a <strong>Grackle</strong> card to steal a card, face down, from any other player. Discard the Grackle at the bottom of the <strong>Pantry</strong>.
+          </div>
+        </div>
+
     </div>
 
   <p><a href='/'>← Go Back</a></p>
@@ -309,7 +306,7 @@
 
 
 <footer class="max-w-7xl px-8 w-full flex justify-between mb-24">
-    <div>&copy; 2024 LeRoy and Lewis The Game</div>
+    <div>&copy; 2024 LeRoy and Lewis: The Game</div>
 </footer>
 
     
