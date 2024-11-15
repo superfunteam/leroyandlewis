@@ -9,7 +9,7 @@
 }
 
 .section-title {
-    @apply text-4xl mb-0 pb-4 font-semibold mt-12 border-b-2 border-navy dark:border-cream
+    @apply text-4xl mb-0 pb-4 font-semibold mt-12 border-b-4 border-navy dark:border-cream
 }
 
 .subsection {

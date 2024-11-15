@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeRoy and Lewis: The Game</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <style>
         body {
             font-family: 'Space Grotesk', sans-serif;
         }
@@ -51,37 +50,36 @@
 
     </script>
 </head>
-<body class="bg-cream dark:bg-navy text-navy dark:text-white min-h-screen pt-8 md:pt-16 flex flex-col items-center gap-12 md:gap-32">
+<body class="bg-cream dark:bg-navy text-navy dark:text-white min-h-screen pt-8 md:pt-16 flex flex-col items-center gap-12 md:gap-16">
+        <img src="logo-light.svg" class="w-64 lg:w-80 dark:hidden" alt="LeRoy and Lewis Logo">
+        <img src="logo-dark.svg" class="w-64 lg:w-80 hidden dark:inline-block" alt="LeRoy and Lewis Logo">
 
-    <img src="logo-light.svg" class="w-64 lg:w-80 dark:hidden" alt="LeRoy and Lewis Logo">
-    <img src="logo-dark.svg" class="w-64 lg:w-80 hidden dark:inline-block" alt="LeRoy and Lewis Logo">
+        <div class="cards grid grid-cols-2 lg:grid-cols-4 gap-2 max-w-7xl mx-auto w-full px-8">
+            <a href="#video" class="card opacity-0 translate-y-4 transition-all duration-700 delay-200 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
+                <span class="material-symbols-outlined text-5xl text-gold font-medium">animated_images</span>
+                <strong class="text-xl md:text-2xl leading-none text-center md:text-left">Quickstart Video</strong>
+            </a>
+            <a href="#rules" class="card opacity-0 translate-y-4 transition-all duration-700 delay-300 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
+                <span class="material-symbols-outlined text-5xl text-gold">book_4_spark</span>
+                <strong class="text-xl md:text-2xl leading-none text-center md:text-left">Complete Rules</strong>
+            </a>
+            <a href="#" class="card opacity-0 translate-y-4 transition-all duration-700 delay-[400ms] rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
+                <span class="material-symbols-outlined text-5xl text-gold">local_mall</span>
+                <strong class="text-xl md:text-2xl leading-none text-center md:text-left">Buy the Game</strong>
+            </a>
+            <a href="https://open.spotify.com/playlist/6CsklDJHwEvuu8aYSFEEbs" class="card opacity-0 translate-y-4 transition-all duration-700 delay-500 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
+                <span class="material-symbols-outlined text-5xl text-gold">volume_up</span>
+                <strong class="text-xl md:text-2xl leading-none text-center md:text-left">Spotify Playlist</strong>
+            </a>
+        </div>
 
-    <div class="cards grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto w-full px-8">
-        <a href="#video" class="card opacity-0 translate-y-4 transition-all duration-700 delay-200 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
-            <span class="material-symbols-outlined text-6xl text-gold font-medium">animated_images</span>
-            <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Quickstart Video</strong>
-        </a>
-        <a href="#rules" class="card opacity-0 translate-y-4 transition-all duration-700 delay-300 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
-            <span class="material-symbols-outlined text-6xl text-gold">menu_book</span>
-            <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Complete Rules</strong>
-        </a>
-        <a href="#" class="card opacity-0 translate-y-4 transition-all duration-700 delay-[400ms] rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
-            <span class="material-symbols-outlined text-6xl text-gold">local_mall</span>
-            <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Buy the Game</strong>
-        </a>
-        <a href="https://open.spotify.com/playlist/6CsklDJHwEvuu8aYSFEEbs" class="card opacity-0 translate-y-4 transition-all duration-700 delay-500 rounded-2xl bg-gold dark:bg-black bg-opacity-20 dark:bg-opacity-40 flex flex-col gap-3 p-6 text-navy dark:text-cream items-center md:items-start">
-            <span class="material-symbols-outlined text-6xl text-gold">volume_up</span>
-            <strong class="text-xl md:text-3xl leading-none text-center md:text-left">Spotify Playlist</strong>
-        </a>
+
+        <div id="video" class="max-w-7xl mx-auto w-full px-8">
+      
+      <div class="aspect-video bg-gold grid items-center justify-center">
+          <span class="material-symbols-outlined text-7xl">play_circle</span>
+      </div>
     </div>
-
-
-    <div id="video" class="max-w-7xl mx-auto w-full px-8">
-  
-  <div class="aspect-video bg-gold grid items-center justify-center">
-      <span class="material-symbols-outlined text-7xl">play_circle</span>
-  </div>
-</div>
 
 
     <div id="rules" class="rules max-w-7xl mx-auto w-full">
@@ -127,27 +125,27 @@
 
     <h2 id="started" class="section-title">Getting Started</h2>
 
-    <div class="flex flex-col md:flex-row gap-2 border-b-2 border-navy dark:border-cream">
+    <div class="flex flex-col md:flex-row gap-2 border-b-4 border-navy dark:border-cream">
       <div class="grow">
-        <h3 class="text-3xl font-semibold">Make meals<br></h3>
+        <h3 class="text-3xl font-semibold">Make Meals<br></h3>
         <span class="text-base leading-tight block mt-1">Match meal cards with Dish cards</span>
       </div>
 
       <div>
-        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:-rotate-90">arrow_downward</span>
+        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:-rotate-90 md:mr-8">arrow_downward</span>
       </div>
 
       <div class="grow">
-        <h3 class="text-3xl font-semibold">Spoil others' meals<br></h3>
+        <h3 class="text-3xl font-semibold">Spoil Others' Meals<br></h3>
         <span class="text-base leading-tight block mt-1">Play Action cards to get in the way</span>
       </div>
 
       <div>
-        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:-rotate-90">arrow_downward</span>
+        <span class="material-symbols-outlined text-4xl text-gold mt-4 text-center md:-rotate-90 md:mr-8">arrow_downward</span>
       </div>
 
       <div class="mb-12 grow">
-        <h3 class="text-3xl font-semibold">Be the best!<br></h3>
+        <h3 class="text-3xl font-semibold">Be the Best!<br></h3>
         <span class="text-base leading-tight block mt-1">Cook your way to the most coins</span>
       </div>
     </div>
@@ -161,9 +159,9 @@
     <p>Each turn follows <strong>three basic phases.</strong> For quick reference, keep the <strong>rule card</strong> out on the table. On each turn:</p> 
 
     <ul class="list-disc pl-5">
-      <li class="pl-2 mb-2"><strong>Draw</strong></li>
-      <li class="pl-2 mb-2"><strong>Play</strong></li>
-      <li class="pl-2 mb-2"><strong>Recycle</strong></li>
+      <li class="pl-2 mb-2"><strong>Draw</strong> - from the main or pantry pile</li>
+      <li class="pl-2 mb-2"><strong>Play</strong> - onto any Meal cards, or use Action cards</li>
+      <li class="pl-2 mb-2"><strong>Recycle</strong> - discard into the pantry pile</li>
     </ul>
 
     <h3 class="subsection"><span class="opacity-60">Phase One:</span> Draw</h3>
@@ -171,7 +169,7 @@
     <p>At the start of your turn, draw up to 7 cards into your hand. If the pantry pile is available, you may also draw from that pile.</p>
 
     <div class="callout">
-        <div class="flex flex justify-center w-full md:w-48 bg-gold pt-0">
+        <div class="flex flex justify-center w-full md:w-48 bg-gold pt-0 ">
             <img class="w-36 md:w-full md:max-w-full" src="callout-image-starburst.svg" alt="">
         </div>
         <div class="grow text-white dark:text-navy p-8 align-middle">
@@ -237,9 +235,9 @@
 
     <p class="mb-8">Use <strong>Action Cards</strong> to turn up the heat! Target other players, give yourself more Coin, block to play defense. When an <strong>Action Card</strong> is played, discard it to the bottom of <strong>The Pantry</strong> card pile.</p>
 
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-3 md:gap-8">
             
-        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+        <div class="action-card flex-col gap-8 mt-6 mb-12 pb-16 border-b border-navy dark:border-cream">
           <div class="max-w-full">
           <img src="089-action-cancel.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
           </div>
@@ -248,7 +246,7 @@
           </div>
         </div>
 
-        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+        <div class="action-card flex-col gap-8 mt-6 mb-12 pb-16 border-b border-navy dark:border-cream">
           <div class="max-w-full">
           <img src="091-action-dropped-tray.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
           </div>
@@ -257,7 +255,7 @@
           </div>
         </div>
 
-        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+        <div class="action-card flex-col gap-8 mt-6 mb-12 pb-16 border-b border-navy dark:border-cream">
           <div class="max-w-full">
           <img src="085-action-minus.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
           </div>
@@ -266,16 +264,16 @@
           </div>
         </div>
 
-        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+        <div class="action-card flex-col gap-8 mt-6 mb-12 pb-16 border-b border-navy dark:border-cream">
           <div class="max-w-full">
           <img src="094-action-chef-peek.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
           </div>
           <div class="flex-auto pt-8">
-            During your turn, play a <strong>Peek</strong> card to look through and take any cards in in the top five of either the <strong>Draw Pile</strong> or the <strong>Pantry</strong>.
+            During your turn, play a <strong>Peek</strong> card to look through and take any cards in the top five of either the <strong>Draw Pile</strong> or the <strong>Pantry</strong>.
           </div>
         </div>
 
-        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+        <div class="action-card flex-col gap-8 mt-6 mb-12 pb-16 border-b border-navy dark:border-cream">
           <div class="max-w-full">
           <img src="082-action-plus.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
           </div>
@@ -284,7 +282,7 @@
           </div>
         </div>
 
-        <div class="action-card flex-col gap-8 mb-16 pb-16 border-b border-navy dark:border-cream">
+        <div class="action-card flex-col gap-8 mt-6 mb-12 pb-16 border-b border-navy dark:border-cream">
           <div class="max-w-full">
           <img src="096-action-grackle-dang.png" alt="" class="drop-shadow-lg rounded-lg md:rounded-2xl">
           </div>
@@ -306,7 +304,7 @@
 
 
 <footer class="max-w-7xl px-8 w-full flex justify-between mb-24">
-    <div>&copy; 2024 LeRoy and Lewis: The Game</div>
+    <div>&copy; <strong>2024 LeRoy and Lewis: The Game</strong></div>
 </footer>
 
     
