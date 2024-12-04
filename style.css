@@ -2934,6 +2934,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:inset-1\/2 {
+    inset: 50%;
+  }
+
   .md\:\!mx-8 {
     margin-left: 2rem !important;
     margin-right: 2rem !important;
@@ -2945,6 +2949,14 @@ video {
 
   .md\:mr-8 {
     margin-right: 2rem;
+  }
+
+  .md\:inline-block {
+    display: inline-block;
+  }
+
+  .md\:inline {
+    display: inline;
   }
 
   .md\:grid {
@@ -3005,6 +3017,10 @@ video {
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
   }
 }
 
